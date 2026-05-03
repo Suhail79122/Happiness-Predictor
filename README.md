@@ -1,4 +1,4 @@
-# Happiness Predictor using Linear Regression
+ر# Happiness Predictor using Linear Regression
 
 ## Overview
 This project focuses on predicting people's happiness scores using a machine learning approach based on Linear Regression. It analyzes various socio-economic factors to understand their impact on overall life satisfaction.
@@ -7,16 +7,11 @@ This project focuses on predicting people's happiness scores using a machine lea
 Happiness is influenced by multiple economic and social indicators. The goal of this project is to build a predictive model that estimates happiness scores based on measurable features.
 
 ## Dataset
-The dataset includes the following features:
-- GDP per capita
-- Social support
-- Healthy life expectancy
-- Freedom to make life choices
-- Generosity
-- Perceptions of corruption
+The dataset used in this project is included in this repository:
 
-Target variable:
-- Happiness Score
+- `2020.csv`
+
+It contains socio-economic features such as GDP per capita, social support, healthy life expectancy, freedom, generosity, and perceptions of corruption, which are used to predict happiness scores.
 
 ## Methodology
 1. Data loading and preprocessing  
@@ -30,6 +25,32 @@ Target variable:
    - R² Score  
 6. Visualizing actual vs predicted results  
 
+## Code
+
+The implementation of this project is available in the repository.
+
+Example:
+
+```python
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+df = pd.read_csv("2020.csv")
+
+X = df[[
+    "GDP per capita",
+    "Social support",
+    "Healthy life expectancy",
+    "Freedom to make life choices",
+    "Generosity",
+    "Perceptions of corruption"
+]]
+y = df["Score"]
+
+model = LinearRegression()
+model.fit(X, y)
+```
+
 ## Technologies Used
 - Python
 - Pandas
@@ -38,7 +59,9 @@ Target variable:
 - Matplotlib
 
 ## Results
-The model provides reasonable predictions of happiness scores based on the selected features. Performance evaluation metrics indicate the effectiveness of the regression model in capturing relationships within the data.
+The model achieved good performance based on evaluation metrics such as MAE, MSE, RMSE, and R² score.  
+The visualization of actual vs predicted values shows a strong correlation, indicating that the model fits the data reasonably well.
+
 
 ## How to Run
 
@@ -59,9 +82,4 @@ python main.py
 - Add a user interface  
 
 ## Author
-This project was developed as part of a Machine Learning course assignment.
-
-## Dataset
-
-You can find the dataset here:
-[Download Dataset](./2020.csv)
+Suhail – AI System Engineering Student
