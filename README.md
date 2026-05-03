@@ -60,3 +60,8 @@ python main.py
 
 ## Author
 This project was developed as part of a Machine Learning course assignment.
+
+## Dataset
+
+You can find the dataset here:
+[Download Dataset](./2020.csv)
