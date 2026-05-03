@@ -67,19 +67,25 @@ The visualization of actual vs predicted values shows a strong correlation, indi
 
 1. Install dependencies:
 ```bash
-pip install pandas numpy scikit-learn matplotlib
+pip install pandas numpy scikit-learn matplotlib notebook
 ```
 
-2. Run the project:
+2. Open the notebook:
 ```bash
-python main.py
+jupyter notebook
 ```
+
+3. Run the file:
+- Open `Happiness_Predictor.ipynb`
+- Run all cells
 
 ## Future Improvements
 - Try advanced models such as Random Forest and XGBoost  
 - Improve feature engineering  
 - Optimize model performance  
 - Add a user interface  
+
+Notebook file: Happiness_Predictor.ipynb
 
 ## Author
 Suhail – AI System Engineering Student
