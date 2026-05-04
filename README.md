@@ -1,5 +1,4 @@
-ر# Happiness Predictor using Linear Regression
-
+# Happiness Predictor using Linear Regression
 ## Overview
 This project focuses on predicting people's happiness scores using a machine learning approach based on Linear Regression. It analyzes various socio-economic factors to understand their impact on overall life satisfaction.
 
